@@ -1,0 +1,612 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+}
+/* header style sheet start */
+#toggle{
+    display: none;
+}
+.toggle-area{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: none;
+    margin-top: 0px;
+}
+.toggle-area label{
+    height: 45px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.toggle-area label span{
+    background-color: black;
+    height: 4px;
+    width: 60%;
+    margin: 2px 0px;
+}
+
+.logo{
+    position: absolute;
+    top: 17px;
+    position: fixed;
+}
+.nav {
+    background-color: white;
+    padding: 30px 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
+   
+    
+}
+
+.nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+.nav a:first-child{
+    color: #7F97FF;
+}
+.nav a:hover{
+    color: #7F97FF;
+}
+
+/* header style sheet end */
+main{
+    padding-top: 150px;
+}
+/* stylesheet of discovering  of profile start*/
+.philip-gilbert{
+    background-color: #F9F9FF ;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 80px;
+}
+.profile-name p{
+    font-size: 20px;
+}
+.profile-name h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.profile p span{
+    font-size: 15px;
+    color: gray;
+}
+.profile button{
+    background-color: #7F97FF;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border: none;
+}
+/* stylesheet of discovering  of profile start*/
+/* stylesheet of personal details here */
+.personal-details{
+    background-color: #FFFFFF;
+}
+.personal{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal p, .personal h1,.personal p span,.personal button{
+    padding: 7px 0px;
+}
+.personal p{
+    font-size: 20px;
+}
+.personal h1{
+    font-size: 50px;
+}
+.personal p span{
+    font-size: 17px;
+    color: gray;
+
+}
+.personal button{
+    padding: 10px 40px;
+    color: white;
+    background-color: #7F97FF;
+    border: none;
+    font-size: 25px;
+}
+
+/* Offered Services Section Start here */
+.offer-service{
+    background-color: #FFFFFF;
+}
+.offer-service h1, .offer-service p span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0px;
+
+}
+.offer-service h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+.offer-service p span{
+    padding-bottom: 40px;
+}
+.services{
+    padding: 0 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.design-1,.design-2,.design-3,.design-4,.design-5,.design-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+
+}
+.design-1:hover{
+    background-color: #7F97FF;
+}
+.design-2:hover{
+    background-color: #7F97FF;
+}
+.design-3:hover{
+    background-color: #7F97FF;
+}
+.design-4:hover{
+    background-color: #7F97FF;
+}
+.design-5:hover{
+    background-color: #7F97FF;
+}
+.design-6:hover{
+    background-color: #7F97FF;
+}
+.fa-camera{
+    font-size: 40px;
+}
+h3{
+    font-size: 25px;
+}
+/* Stylesheet forProject number section */
+.project-number{
+    background-color: #7F97FF;
+}
+.projects{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 80px 180px;
+}
+.project-1,.project-2,.project-3,.project-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    color: white;
+    font-size: 30px;
+}
+
+/* Stylesheet for featured project  */
+
+.feature-project h1, .feature-project p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.feature-project h1{
+    padding-top: 40px;
+    font-size: 40px;
+}
+.feature-project p{
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.feature-projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    padding: 30px 150px;
+}
+.feature-1,.feature-2,.feature-3,.feature-4,.feature-5,.feature-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0px;
+
+}
+.image {
+    opacity: 1;
+    display: block;
+    color: #7F97FF;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+.feature-1:hover img{
+    opacity: 0.3;
+    transition: 0.4s;
+}
+.feature-2:hover img{
+    opacity: 0.3;
+    transition: 0.4s;
+}
+.feature-3:hover img{
+    opacity: 0.3;
+    transition: 0.4s;
+}
+.feature-4:hover img{
+    opacity: 0.3;
+    transition: 0.4s;
+}
+.feature-5:hover img{
+    opacity: 0.3;
+    transition: 0.4s;
+}
+.feature-6:hover img{
+    opacity: 0.3;
+    transition: 0.4s;
+}
+
+/* Stylesheet for choosing plan section */
+.choose-plan{
+    background-color: #FFFFFF;
+}
+.choose-plan h1,.choose-plan p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.choose-plan h1{
+    padding-top: 40px;
+    font-size: 40px;
+}
+.choose-plan p{
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 40px 300px;
+}
+.plan-1{
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    border:none;
+    background-color: #F9F9FF;
+}
+.plan-1 .plana{
+    padding:10px 0px;
+}
+.plan-1 h2{
+    font-size: 50px;
+}
+.plan-1 h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.plan-1 span{
+    font-size: 20px;
+}
+.plan-1 .btn-price{
+    padding: 10px 0px;
+}
+.plan-1 .btn-price button{
+    background-color: #7F97FF;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+}
+.plan-1 .details-plan{
+    padding: 10px 0px;
+}
+
+.plan-2{
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    border:none;
+    background-color: #F9F9FF;
+}
+.plan-2 .plana{
+    padding:10px 0px;
+}
+.plan-2 h2{
+    font-size: 50px;
+}
+.plan-2 h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.plan-2 span{
+    font-size: 20px;
+}
+.plan-2 .btn-price{
+    padding: 10px 0px;
+}
+.plan-2 .btn-price button{
+    background-color: #7F97FF;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+}
+.plan-2 .details-plan{
+    padding: 10px 0px;
+}
+
+.plan-3{
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    border:none;
+    background-color: #F9F9FF;
+}
+.plan-3 .plana{
+    padding:10px 0px;
+}
+.plan-3 h2{
+    font-size: 50px;
+}
+.plan-3 h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.plan-3 span{
+    font-size: 20px;
+}
+.plan-3 .btn-price{
+    padding: 10px 0px;
+}
+.plan-3 .btn-price button{
+    background-color: #7F97FF;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+}
+.plan-3 .details-plan{
+    padding: 10px 0px;
+}
+.plan-1:hover{
+    background-color: #7F97FF;
+    transition: ease-in 2s;
+}
+.plan-2:hover{
+    background-color: #7F97FF;
+    transition: ease-in 2s;
+}
+.plan-3:hover{
+    background-color: #7F97FF;
+    transition: ease-in 2s;
+}
+.plan-1:hover .btn-price button{
+    background-color: white;
+    color: black;
+    transition: ease-in 2s;
+}
+.plan-2:hover .btn-price button{
+    background-color: white;
+    color: black;
+    transition: ease-in 2s;
+}
+.plan-3:hover .btn-price button{
+    background-color: white;
+    color: black;
+    transition: ease-in 2s;
+}
+
+@media screen and (max-width:688px) {
+    .logo{
+        top: 17px;
+    }
+    .nav {
+        flex-direction: column;
+        padding: 0px 20px;
+        display: none;
+        position: absolute;
+        margin-top: 30px;
+    }
+    .nav a {
+        padding: 10px 0px;
+        font-size: large;
+        font-weight: bold;
+        
+    }
+    #toggle:checked + .nav{
+        display: flex;
+    }
+    .toggle-area{
+        display: flex;
+        
+    }
+    .toggle-area label {
+        margin-top: 40px;
+        position: fixed;
+        
+    }
+    .profile{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px !important;
+    }
+    .profile .profile-name h1{
+        font-size: 20px;
+    }
+
+    .profile button{
+        padding: 10px 20px;
+    }
+    
+    .profile-img img{
+        width: 120px;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+.personal{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+.personal-img img{
+    width: 140px;
+}
+.personal-info h1{
+    font-size: 25px;
+}
+.personal-info button{
+    padding: 10px 25px;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 0px 0px;
+}  
+.projects{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 0px 0px;
+}
+.feature-projects{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 15px;
+    padding: 0px 0px;
+}
+.image{
+    width: 180px;
+}
+.choose-plan p{
+    font-size: 10px;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+    padding: 0px 0px;
+}
+}
+
+
+@media screen and (min-width:689px) and (max-width:992px) {
+  
+    .logo{
+        top: 17px;
+    }
+    .nav {
+        flex-direction: column;
+        padding: 0px 20px;
+        display: none;
+        position: absolute;
+        margin-top: 30px;
+        
+    }
+    .nav a {
+        padding: 10px 0px;
+        font-size: large;
+        font-weight: bold;
+        
+    }
+    #toggle:checked + .nav{
+        display: flex;
+    }
+    .toggle-area{
+        display: flex;
+        
+    }
+    .toggle-area label {
+        margin-top: 40px;
+        position: fixed;
+        
+    }
+    .profile{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .profile-name h1{
+        font-size: 30px;
+    }
+
+    .personal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0px;
+    }
+    .personal-img img{
+        width: 240px;
+    }
+    .personal-info h1{
+        font-size: 35px;
+    }
+    .personal-info button{
+        padding: 10px 30px;
+    }
+    .services{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0px 0px;
+    }
+
+    .projects{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0px 0px;
+    }
+    .feature-projects{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px;
+        padding: 0px 0px;
+    }
+    .image{
+        width: 380px;
+    }
+    .choose-plan p{
+        font-size: 10px;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        padding: 0px 0px;
+    }
+ 
+}
+
