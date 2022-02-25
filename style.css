@@ -427,6 +427,13 @@ h3{
     color: black;
     transition: ease-in 2s;
 }
+/* Stylesheet of footer section */
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 15px 0px;
+}
 
 @media screen and (max-width:688px) {
     .logo{
@@ -603,7 +610,7 @@ h3{
     }
     .card{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-gap: 20px;
         padding: 0px 0px;
     }
